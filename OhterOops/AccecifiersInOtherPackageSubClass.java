@@ -1,6 +1,7 @@
 package OhterOops;
 
 import Oops.Accecifiers;
+// import Oops.demoClass; Default class not visible to other package
 
 public class AccecifiersInOtherPackageSubClass extends Accecifiers{
  public static void main(String[] args) {

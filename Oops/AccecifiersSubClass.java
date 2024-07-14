@@ -29,7 +29,16 @@ class demoChild extends demoClass
     }
 }
 
-class demoSuperChild extends demoChild
+class demoOtherClass
+{
+    public void getDataChild(){
+        demoClass dm = new demoClass();
+        // In child class private not inheritate
+        System.out.println("Value of all variable -: " +" - "+ dm.protectedVal +" - "+ dm.publicVal +" - "+ dm.defaultVal);
+    }
+}
+
+class demoSuperChild
 {
     public void getDataSuperChild(){
         // In child class private not inheritate
