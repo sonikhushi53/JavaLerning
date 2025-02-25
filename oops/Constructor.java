@@ -4,6 +4,7 @@ class ABC{
     // void add to make it method
     protected ABC(){
         System.out.println("ABC Constructor is created.");
+        // this();
     }
 
 }
@@ -30,6 +31,10 @@ public class Constructor {
          * Default constructor provides the default values to the object like 0, null, etc. depending on the type.
          * 
          *  There are no “return value” statements in the constructor, but the constructor returns the current class instance. We can write ‘return’ inside a constructor. 
+         * 
+         * a constructor can be declared private. A private constructor is used in restricting object creation.
+         * 
+         * Constructor calling must be first line in a constructor like by this() and super()
          */
 
         //  ABC ab; 
