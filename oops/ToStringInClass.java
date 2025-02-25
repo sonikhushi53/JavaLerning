@@ -1,6 +1,7 @@
 package oops;
 
 // Blueprint for a Smartphone
+// every class in Java is the subclass of a class object even if you don’t say extends object in your class definition
 class Smartphone {
     String brand;
     String model;
@@ -20,6 +21,11 @@ class Smartphone {
         System.out.println("Battery Life: " + batteryLife + " hours");
         System.out.println("--------------------------");
     }
+
+    // @Override
+    // public String toString(){
+    //     return "toString method is called";
+    // }
 }
 
 public class ToStringInClass {
