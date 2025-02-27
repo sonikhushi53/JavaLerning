@@ -1,26 +1,37 @@
 package oops;
 
 class Parent{
-    // Parent(){
-    //     System.out.println("Parent Class");
-    // }
+    String name = "Axixa";
+
+    Parent(){
+        System.out.println("Parent Class");
+    }
 
     Parent(int a, int b){
         System.out.println("Parent Perameterized Class");
     }
+
 }
 
 class Child extends Parent{
+    String name = "Khushi";
+
     Child(){
+        // super();
         super(8,9);
         System.out.println("Child Class");
     }
 
     Child(int a, int b){
-        super(8,9);
+        // super(8,9);
 
         System.out.println("Child Perameterized Class");
     }
+
+    void getName(){
+        System.out.println(super.name);
+    }
+
 }
 public class ConsWithParent {
     public static void main(String[] args) {
@@ -37,6 +48,8 @@ public class ConsWithParent {
          */
         Child c = new Child();
         Child c2 = new Child(10, 15);
+
+        c.getName();
 
     }
 }

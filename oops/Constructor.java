@@ -12,7 +12,8 @@ class ABC{
 public class Constructor {
 
     public static void main(String[] args) {
-        // All classes have at least  one  constructor. If a class does not explicitly declare any, the Java compiler automatically provides a no-argument constructor, also called the default constructor. This default constructor calls the class parent’s no-argument constructor (as it contains only one statement i.e super();), or the  Object  class constructor if the class has no other parent (as the Object class is the parent of all classes either directly or indirectly)
+        // All classes have at least  one  constructor. If a class does not explicitly declare any, the Java compiler automatically provides a no-argument constructor, also called the default constructor. 
+        //This default constructor calls the class parent’s no-argument constructor (as it contains only one statement i.e super();), or the  Object  class constructor if the class has no other parent (as the Object class is the parent of all classes either directly or indirectly)
 
         /*
          * Called when object created using the new() keyword
