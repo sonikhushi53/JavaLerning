@@ -14,7 +14,7 @@ public class InstanceSecType {
         // Try block to check for exceptions
         try {
             // Correcting the class name to match "InstanceSecType"
-            Class<?> c = Class.forName("InstanceSecType");
+            Class<?> c = Class.forName("oops.InstanceSecType");
           
             // Creating an object of the main class using reflection
             InstanceSecType o = (InstanceSecType) c.getDeclaredConstructor().newInstance();
