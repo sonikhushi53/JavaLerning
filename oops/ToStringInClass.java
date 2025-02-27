@@ -22,10 +22,13 @@ class Smartphone {
         System.out.println("--------------------------");
     }
 
-    // @Override
-    // public String toString(){
-    //     return "toString method is called";
-    // }
+    // If we not override toString method than printing a object is output in - 
+    // packagename.ClassName@hascodeofclass
+    
+    @Override
+    public String toString(){
+        return "toString method is called";
+    }
 }
 
 public class ToStringInClass {
