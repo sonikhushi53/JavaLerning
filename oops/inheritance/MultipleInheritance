@@ -1,0 +1,13 @@
+
+* In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. 
+ * Please note that Java does not support multiple inheritances with classes. 
+ * In Java, we can achieve multiple inheritances only through Interfaces.
+ 
+
+ -> Why Java Does NOT Support Multiple Inheritance?
+  1️⃣ Diamond Problem: If two parent classes inherit from the same grandparent, and a child inherits from both parents, it creates confusion about which method to inherit.
+2️⃣ Ambiguity: If both parents have a method with the same name, the compiler cannot decide which one to call.
+3️⃣ Complexity: Managing multiple parent classes increases code complexity and can lead to unpredictable behavior.
+
+
+
