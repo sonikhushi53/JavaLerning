@@ -1,0 +1,30 @@
+Throwable  
+├── Error  (Unchecked)  
+│   ├── OutOfMemoryError  
+│   ├── StackOverflowError  
+│   ├── VirtualMachineError  
+│   └── AssertionError  
+│  
+└── Exception  (Checked & Unchecked)  
+    ├── RuntimeException  (Unchecked)  
+    │   ├── NullPointerException  
+    │   ├── ArithmeticException  
+    │   ├── IndexOutOfBoundsException  
+    │   ├── IllegalArgumentException  
+    │   │   ├── NumberFormatException  
+    │   ├── ClassCastException  
+    │   └── UnsupportedOperationException  
+    │  
+    ├── IOException  (Checked)  
+    │   ├── FileNotFoundException  
+    │   ├── EOFException  
+    │   └── SocketException  
+    │  
+    ├── SQLException  (Checked)  
+    ├── ClassNotFoundException  (Checked)  
+    ├── InterruptedException  (Checked)  
+    ├── ParseException  (Checked)  
+    └── ReflectiveOperationException  (Checked)  
+
+
+
