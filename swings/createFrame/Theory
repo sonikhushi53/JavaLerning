@@ -1,0 +1,85 @@
+setDefaultCloseOperation(int operation)
+📌 What it does?
+
+Defines what happens when you click the close button (X) on the frame.
+📌 Options Available:
+
+Option	Description
+JFrame.EXIT_ON_CLOSE	-> Closes the application completely (Best for most apps)
+JFrame.DISPOSE_ON_CLOSE	-> Closes only the current window but keeps the program running
+JFrame.HIDE_ON_CLOSE	-> Hides the window but doesnt close the app
+JFrame.DO_NOTHING_ON_CLOSE ->	Prevents the window from closing
+
+--------------------------xxxxxx-----------------------------------
+
+SetLayout(LayoutManager layout)
+📌 What it does?
+
+Defines how components (buttons, labels, etc.) are arranged inside the JFrame or JPanel.
+📌 Common Layouts:
+
+Layout	    -> Description
+
+null	    -> No layout, manually set positions with setBounds()
+FlowLayout	-> Components are placed left to right automatically
+BorderLayout->	Components placed in NORTH, SOUTH, EAST, WEST, CENTER
+GridLayout	-> Arranges components in a grid format
+
+--------------------------xxxxxx-----------------------------------
+
+setVisible(boolean visible)
+📌 What it does?
+
+Shows (true) or hides (false) the frame or component.
+
+--------------------------xxxxxx-----------------------------------
+
+Connection Between setBounds() and setLayout()
+🔹 setBounds(x, y, width, height) → Sets Manual Position & Size
+This method only works when you use setLayout(null).
+It lets you manually position and size components (buttons, labels, etc.).
+
+🔹 setLayout(LayoutManager) → Controls Auto-Positioning
+If you dont use setLayout(null), the layout manager automatically positions components.
+If you set a layout (like FlowLayout, GridLayout), then setBounds() won’t work properly.
+--------------------------xxxxxx-----------------------------------
+
+In Swing, getContentPane() is used to get the content area of a JFrame.
+
+By default, when you add components (JButton, JPanel, etc.) to a JFrame, they go inside the content pane (not directly on the JFrame).
+
+
+* JFrame has only one contentPane
+* But, we can use multiple JPanels inside the contentPane to organize UI elements. 
+
+
+
+Real-Life Analogy:
+Imagine a photo frame (JFrame). The photo inside the frame is the content pane (getContentPane()).
+
+If you want to paint the photo, you need to paint the photo area, not the outer frame.
+Similarly, in Swing, you modify the contentPane, not the JFrame itself.
+                   ----
+
+
+
+Why Use getContentPane()?
+JFrame has multiple layers, including a title bar, menu bar, and a content pane.
+To change the background color or add components, we must modify the content pane, not the JFrame itself.
+                            -----
+
+* abhi hum directly frame.add(panel); krte h lekin java ke older version ye support nhi krta tha tb -
+frame.getContentPane().add(panel); ka use krte h lekin ab ye kam jvm khud kar leta h .
+
+--------------------------xxxxxx-----------------------------------
+
+JOptionPane ke Important Dialog Types
+Method	          -> Description
+showMessageDialog ->	Simple message show karta hai
+showConfirmDialog ->	Yes/No/Cancel confirmation deta hai
+showInputDialog	  ->    User se input leta hai
+showOptionDialog  ->	Custom buttons ke sath dialog show karta hai
+--------------------------xxxxxx-----------------------------------
+--------------------------xxxxxx-----------------------------------
+--------------------------xxxxxx-----------------------------------
+--------------------------xxxxxx-----------------------------------
